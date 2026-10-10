@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fbf8f1; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+h1 {
+  color: #45341d;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 560px; 
+  padding: 48px;
+  border-radius: 12px;
+  border: 1px solid #ebdcb9;
+  box-shadow: 0 10px 25px -5px rgba(180, 115, 20, 0.08);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #45341d;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px; 
+  font-size: 16px;
+  border: 1.5px solid #d8c39d;
+  border-radius: 8px;
+  background-color: #fefdfb;
+  color: #2e2415;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #d97706; 
+  box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.15);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 12px;
+  background-color: #d97706; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #b45309; 
+}
+
+
+
+/* css for success*/
+
+
+.text-center {
+  text-align: center;
+}
+
+.success-text {
+  color: green;
+  font-size: 34px;
+  margin-bottom: 16px;
+  display: block; 
+}
+
+.message {
+  color: #45341d;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.card2 {
+  background: #ffffff;
+  width: 70%;
+  
+  padding: 48px;
+  border-radius: 12px;
+  border: 1px solid #ebdcb9;
+  box-shadow: 0 10px 25px -5px rgba(180, 115, 20, 0.08);
+}
+
+.sub-message{
+    color: black;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+/* css for failure*/
+
+.failure-text {
+  color: red;
+  font-size: 34px;
+  margin-bottom: 16px;
+  display: block; 
+}
+
+#go-back{
+    width: 50%;
+}
