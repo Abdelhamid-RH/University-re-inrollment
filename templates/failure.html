@@ -1,0 +1,13 @@
+
+  {% extends "layout.html" %}
+
+  {% block body %}
+    <div class="card2 text-center">
+      <h2 class="failure-text">Error</h2>
+      <p class="message">
+        The provided name and ID have not been found, please re-check your information or contact the administartion.
+      </p>
+      <button id="go_back">Go back</button>
+    </div>
+    <script src = "{{ url_for('static', filename = 'script.js') }}"></script>
+  {% endblock %}
