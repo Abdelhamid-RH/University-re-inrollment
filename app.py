@@ -17,7 +17,7 @@ def result():
 
     stdlist = []
 
-    with open("students.csv", "r") as f:
+    with open("test.csv", "r") as f:
         reader = csv.DictReader(f)
         header = reader.fieldnames
         for row in reader:
@@ -34,7 +34,7 @@ def result():
     full_name = request.form.get("first_name") + " " + request.form.get("last_name")
 
     if updated == True:
-        with open("students.csv", "w", newline="") as f:
+        with open("test.csv", "w", newline="") as f:
             writer = csv.DictWriter(f, fieldnames = header)
             writer.writeheader()
             writer.writerows(stdlist)
